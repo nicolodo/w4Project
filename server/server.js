@@ -41,7 +41,7 @@ app.post("/messages", async function (request, response) {
 
 
 // making a listen port so I can see what's happening
-const PORT = process.env.PORT || 4242;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`);
 });
