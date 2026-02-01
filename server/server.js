@@ -39,6 +39,9 @@ app.get("/messages", async function (request, response) {
     response.json(messages.rows);
 })
 
-app.get('/', (req, res) => {
-    res.send('Hello!');
+
+// making a listen port so I can see what's happening
+const PORT = 4242
+app.listen(PORT, () => {
+    console.log("something listens at http://localhost:"+String(PORT));
 })
