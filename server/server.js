@@ -15,4 +15,10 @@ const db = new pg.Pool({ // idk what a Pool is but that pg is postgres (related 
     connectionString: process.env.DB_CONN // our env var DB_CONN connects w/ idk supa or re-something
 })
 
+app.get('/', (req, res) => {
+    res.send('Hello!');
+})
 
+app.listen('8080', () => {
+    console.log('server started on port http://localhost:8080');
+})
