@@ -17,14 +17,9 @@ const db = new pg.Pool({
 })
 
 
-// making a listen port so I can see what's happening
-const PORT = 8080
-app.listen(PORT, () => {
-    console.log("something listens at http://localhost:"+String(PORT));
-})
-
-app.listen(7070, () => {
-    console.log("The port at 7070 is open")
+app.get('/', (req, res) => {
+    res.send('Hello!');
+    console.log("the root has been requested!")
 })
 
 app.listen(4242, () => { // open port 4242
