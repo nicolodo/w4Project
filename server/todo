@@ -1,0 +1,17 @@
+
+make a supa db and make it have a few columns of interest
+
+make an .env file to put the link to the db
+so that it's hidden from threat actors
+
+and style the client page so it looks good on mobile
+
+make the client and server.js code.
+for the client page make a form with those things 
+to fill in
+
+ -- can use postman to make post requests to the server.js
+ -- if the client is not setup yet.
+deploy the server and client code onto render.com
+so its hosted there
+
