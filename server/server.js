@@ -4,6 +4,8 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import pg from "pg";
+import pkg from "pg";
+const { Pool } = pkg;
 
 // setup
 const app = express();
