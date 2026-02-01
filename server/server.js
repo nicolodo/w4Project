@@ -27,6 +27,10 @@ app.listen(7070, () => {
     console.log("The port at 7070 is open")
 })
 
+app.listen(4242, () => { // open port 4242
+    console.log(`Server started on port http://localhost:4242`)
+})
+
 //  making an async function as the endpoint
 // This logs the table to the console
 app.get("/messages", async function (request, response) {
