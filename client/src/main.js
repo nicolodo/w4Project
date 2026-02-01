@@ -22,3 +22,10 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+
+// Code I am adding is below
+const baseUrl = "https://w4project-ppri.onrender.com";
+//replace w localhost:4252 if on developer
+await fetch(`${baseUrl}/books`);
+
+
