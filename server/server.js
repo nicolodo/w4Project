@@ -39,7 +39,7 @@ app.post("/messages", async function (request, response) {
 
 
 // making a listen port so I can see what's happening
-const PORT = 4242
+const PORT = 10000
 app.listen(PORT, () => {
     console.log("something listens at http://localhost:"+String(PORT));
 })
