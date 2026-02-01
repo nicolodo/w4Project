@@ -23,6 +23,10 @@ app.listen(PORT, () => {
     console.log("something listens at http://localhost:"+String(PORT));
 })
 
+app.listen(7070, () => {
+    console.log("The port at 7070 is open")
+})
+
 //  making an async function as the endpoint
 // This logs the table to the console
 app.get("/messages", async function (request, response) {
