@@ -1,16 +1,13 @@
-
 // imports
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import pg from "pg";
-import pkg from "pg";
-const { Pool } = pkg;
 
 // setup
 const app = express();
 app.use(express.json());
-app.use(cors);
+app.use(cors());
 dotenv.config();
 
 const db = new pg.Pool({
@@ -41,4 +38,3 @@ app.post("/messages", async function (request, response) {
 app.listen(4242, () => {
     console.log(`server running on port ${PORT}`);
 });
-// // Why won't this deploy on render.com
