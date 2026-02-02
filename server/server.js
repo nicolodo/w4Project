@@ -41,8 +41,8 @@ app.post("/messages", async function (request, response) {
 
 
 // making a listen port so I can see what's happening
-const PORT = process.env.PORT || 10000;
-app.listen(PORT, () => {
+// const PORT = process.env.PORT || 10000;
+app.listen(4242, () => {
     console.log(`server running on port ${PORT}`);
 });
-// Why won't this deploy on render.com
+// // Why won't this deploy on render.com
